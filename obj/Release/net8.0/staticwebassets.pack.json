@@ -1,0 +1,49 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\hocAPI\\APi\\APi\\wwwroot\\Uploads\\products\\09\\2025\\1f37a4e8-9240-4cf5-9247-392b0f1d9b80-.png",
+      "PackagePath": "staticwebassets\\Uploads\\products\\09\\2025\\1f37a4e8-9240-4cf5-9247-392b0f1d9b80-.png"
+    },
+    {
+      "Id": "D:\\hocAPI\\APi\\APi\\wwwroot\\Uploads\\products\\09\\2025\\939260dc-94c3-4c9a-b656-3b14d9bb5ca0-.png",
+      "PackagePath": "staticwebassets\\Uploads\\products\\09\\2025\\939260dc-94c3-4c9a-b656-3b14d9bb5ca0-.png"
+    },
+    {
+      "Id": "D:\\hocAPI\\APi\\APi\\wwwroot\\Uploads\\products\\09\\2025\\a10ff3b9-683c-4311-9dc3-67a10bda0cd2-.png",
+      "PackagePath": "staticwebassets\\Uploads\\products\\09\\2025\\a10ff3b9-683c-4311-9dc3-67a10bda0cd2-.png"
+    },
+    {
+      "Id": "D:\\hocAPI\\APi\\APi\\wwwroot\\Uploads\\products\\09\\2025\\d35e477f-c56c-473b-8d7d-2df13d93bce9-.png",
+      "PackagePath": "staticwebassets\\Uploads\\products\\09\\2025\\d35e477f-c56c-473b-8d7d-2df13d93bce9-.png"
+    },
+    {
+      "Id": "D:\\hocAPI\\APi\\APi\\wwwroot\\Uploads\\products\\09\\2025\\f19b0e7e-8340-4105-999e-0daa5f113a8b-.png",
+      "PackagePath": "staticwebassets\\Uploads\\products\\09\\2025\\f19b0e7e-8340-4105-999e-0daa5f113a8b-.png"
+    },
+    {
+      "Id": "D:\\hocAPI\\APi\\APi\\wwwroot\\Uploads\\products\\10\\2025\\0288ff3a-59be-4d82-baf7-096ad2f37fcd-.png",
+      "PackagePath": "staticwebassets\\Uploads\\products\\10\\2025\\0288ff3a-59be-4d82-baf7-096ad2f37fcd-.png"
+    },
+    {
+      "Id": "D:\\hocAPI\\APi\\APi\\wwwroot\\Uploads\\products\\10\\2025\\43306961-1a31-4c23-9f6b-580344cf42f4-.png",
+      "PackagePath": "staticwebassets\\Uploads\\products\\10\\2025\\43306961-1a31-4c23-9f6b-580344cf42f4-.png"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.APi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.build.APi.props",
+      "PackagePath": "build\\APi.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.APi.props",
+      "PackagePath": "buildMultiTargeting\\APi.props"
+    },
+    {
+      "Id": "obj\\Release\\net8.0\\staticwebassets\\msbuild.buildTransitive.APi.props",
+      "PackagePath": "buildTransitive\\APi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

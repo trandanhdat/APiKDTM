@@ -1,0 +1,352 @@
+2025-10-21 22:29:39.152 +07:00 [INF] User profile is available. Using 'C:\Users\tran dat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 22:29:39.905 +07:00 [INF] Now listening on: https://localhost:7161
+2025-10-21 22:29:39.909 +07:00 [INF] Now listening on: http://localhost:5266
+2025-10-21 22:29:39.915 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 22:29:39.918 +07:00 [INF] Hosting environment: Development
+2025-10-21 22:29:39.921 +07:00 [INF] Content root path: D:\hocAPI\APi\APi
+2025-10-21 22:29:41.102 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger - null null
+2025-10-21 22:29:41.529 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger - 301 0 null 437.4948ms
+2025-10-21 22:29:41.536 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - null null
+2025-10-21 22:29:41.753 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - 200 null text/html;charset=utf-8 216.6488ms
+2025-10-21 22:29:41.773 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/swagger-ui.css - null null
+2025-10-21 22:29:41.774 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/swagger-ui-standalone-preset.js - null null
+2025-10-21 22:29:41.775 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/swagger-ui-bundle.js - null null
+2025-10-21 22:29:41.774 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 22:29:41.774 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - null null
+2025-10-21 22:29:41.867 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 92.7612ms
+2025-10-21 22:29:41.901 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-10-21 22:29:41.901 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-10-21 22:29:41.923 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 149.4839ms
+2025-10-21 22:29:41.932 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/swagger-ui.css - 200 143943 text/css 159.1759ms
+2025-10-21 22:29:41.935 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-10-21 22:29:41.969 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 195.0344ms
+2025-10-21 22:29:42.047 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - 200 null text/javascript; charset=UTF-8 273.6857ms
+2025-10-21 22:29:42.428 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - null null
+2025-10-21 22:29:42.478 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/favicon-32x32.png - null null
+2025-10-21 22:29:42.491 +07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-10-21 22:29:42.497 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/favicon-32x32.png - 200 628 image/png 18.5624ms
+2025-10-21 22:29:42.832 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 405.453ms
+2025-10-21 22:30:38.650 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/Loai - null null
+2025-10-21 22:30:40.481 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2025-10-21 22:30:40.494 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-21 22:30:40.497 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/Loai - 401 0 null 1847.1343ms
+2025-10-21 22:30:56.217 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7161/api/Auth/Login - application/json 49
+2025-10-21 22:30:56.234 +07:00 [INF] Executing endpoint 'APi.Controllers.AuthController.Login (APi)'
+2025-10-21 22:30:56.279 +07:00 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(APi.Models.LoginRequestDTO) on controller APi.Controllers.AuthController (APi).
+2025-10-21 22:31:00.386 +07:00 [INF] Executed DbCommand (175ms) [Parameters=[@__request_Username_0='?' (Size = 50)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[id], [u].[createdAt], [u].[email], [u].[fullname], [u].[isActive], [u].[lastLogin], [u].[password], [u].[phone], [u].[role], [u].[username]
+FROM [Users] AS [u]
+WHERE [u].[username] = @__request_Username_0 AND [u].[isActive] = CAST(1 AS bit)
+2025-10-21 22:31:01.555 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`3[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[APi.Models.DTO.AuthResponse, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-21 22:31:01.593 +07:00 [INF] Executed action APi.Controllers.AuthController.Login (APi) in 5304.7411ms
+2025-10-21 22:31:01.597 +07:00 [INF] Executed endpoint 'APi.Controllers.AuthController.Login (APi)'
+2025-10-21 22:31:01.610 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7161/api/Auth/Login - 200 null application/json; charset=utf-8 5393.6004ms
+2025-10-21 22:31:27.344 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/Loai - null null
+2025-10-21 22:31:27.435 +07:00 [INF] Executing endpoint 'APi.Controllers.LoaiController.GetAll (APi)'
+2025-10-21 22:31:27.440 +07:00 [INF] Route matched with {action = "GetAll", controller = "Loai"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetAll() on controller APi.Controllers.LoaiController (APi).
+2025-10-21 22:31:27.446 +07:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[APi.Models.LoaiModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-10-21 22:31:27.453 +07:00 [INF] Executed action APi.Controllers.LoaiController.GetAll (APi) in 8.4484ms
+2025-10-21 22:31:27.455 +07:00 [INF] Executed endpoint 'APi.Controllers.LoaiController.GetAll (APi)'
+2025-10-21 22:31:27.458 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/Loai - 200 null application/json; charset=utf-8 114.9409ms
+2025-10-21 22:34:40.998 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7161/upload - multipart/form-data; boundary=----WebKitFormBoundaryrfB7BIGUfBIdRghB 122432
+2025-10-21 22:34:41.007 +07:00 [INF] Executing endpoint 'APi.Controllers.FileController.UploadFile (APi)'
+2025-10-21 22:34:41.017 +07:00 [INF] Route matched with {action = "UploadFile", controller = "File"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadFile(Microsoft.AspNetCore.Http.IFormFile) on controller APi.Controllers.FileController (APi).
+2025-10-21 22:34:41.108 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType4`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 22:34:41.115 +07:00 [INF] Executed action APi.Controllers.FileController.UploadFile (APi) in 93.7004ms
+2025-10-21 22:34:41.120 +07:00 [INF] Executed endpoint 'APi.Controllers.FileController.UploadFile (APi)'
+2025-10-21 22:34:41.125 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7161/upload - 200 null application/json; charset=utf-8 127.074ms
+2025-10-21 22:37:41.931 +07:00 [INF] User profile is available. Using 'C:\Users\tran dat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 22:37:42.478 +07:00 [INF] Now listening on: https://localhost:7161
+2025-10-21 22:37:42.482 +07:00 [INF] Now listening on: http://localhost:5266
+2025-10-21 22:37:42.493 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 22:37:42.505 +07:00 [INF] Hosting environment: Development
+2025-10-21 22:37:42.530 +07:00 [INF] Content root path: D:\hocAPI\APi\APi
+2025-10-21 22:37:43.270 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - null null
+2025-10-21 22:37:43.739 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - null null
+2025-10-21 22:37:43.739 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 22:37:43.751 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - 200 null text/html;charset=utf-8 507.274ms
+2025-10-21 22:37:43.823 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 83.3274ms
+2025-10-21 22:37:43.933 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - 200 null text/javascript; charset=UTF-8 195.8024ms
+2025-10-21 22:37:44.327 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - null null
+2025-10-21 22:37:44.776 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 448.6932ms
+2025-10-21 22:47:00.035 +07:00 [INF] User profile is available. Using 'C:\Users\tran dat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 22:47:00.632 +07:00 [INF] Now listening on: https://localhost:7161
+2025-10-21 22:47:00.636 +07:00 [INF] Now listening on: http://localhost:5266
+2025-10-21 22:47:00.643 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 22:47:00.646 +07:00 [INF] Hosting environment: Development
+2025-10-21 22:47:00.648 +07:00 [INF] Content root path: D:\hocAPI\APi\APi
+2025-10-21 22:47:01.563 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - null null
+2025-10-21 22:47:01.925 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 22:47:01.926 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - null null
+2025-10-21 22:47:01.932 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - 200 null text/html;charset=utf-8 383.91ms
+2025-10-21 22:47:01.945 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 21.0277ms
+2025-10-21 22:47:02.019 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - 200 null text/javascript; charset=UTF-8 92.8355ms
+2025-10-21 22:47:02.226 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - null null
+2025-10-21 22:47:02.551 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 325.207ms
+2025-10-21 22:47:13.287 +07:00 [INF] Request starting HTTP/2 POST https://localhost:7161/upload - multipart/form-data; boundary=----WebKitFormBoundarybZZx7kOsKBehWPvD 135
+2025-10-21 22:47:14.571 +07:00 [INF] Executing endpoint 'APi.Controllers.FileController.UploadFile (APi)'
+2025-10-21 22:47:14.612 +07:00 [INF] Route matched with {action = "UploadFile", controller = "File"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UploadFile(Microsoft.AspNetCore.Http.IFormFile) on controller APi.Controllers.FileController (APi).
+2025-10-21 22:47:14.664 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-10-21 22:47:14.697 +07:00 [INF] Executed action APi.Controllers.FileController.UploadFile (APi) in 78.5973ms
+2025-10-21 22:47:14.701 +07:00 [INF] Executed endpoint 'APi.Controllers.FileController.UploadFile (APi)'
+2025-10-21 22:47:14.705 +07:00 [INF] Request finished HTTP/2 POST https://localhost:7161/upload - 400 null application/problem+json; charset=utf-8 1417.5358ms
+2025-10-21 22:48:03.758 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/Role/history/32321 - null null
+2025-10-21 22:48:03.787 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperAdmin|Admin)
+2025-10-21 22:48:03.797 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-21 22:48:03.800 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/Role/history/32321 - 401 0 null 42.1139ms
+2025-10-21 22:48:04.888 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/Role/history/32321 - null null
+2025-10-21 22:48:04.898 +07:00 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (SuperAdmin|Admin)
+2025-10-21 22:48:04.900 +07:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-10-21 22:48:04.903 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/Role/history/32321 - 401 0 null 15.5245ms
+2025-10-21 23:07:07.088 +07:00 [INF] User profile is available. Using 'C:\Users\tran dat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 23:07:07.495 +07:00 [INF] Now listening on: https://localhost:7161
+2025-10-21 23:07:07.497 +07:00 [INF] Now listening on: http://localhost:5266
+2025-10-21 23:07:07.503 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 23:07:07.505 +07:00 [INF] Hosting environment: Development
+2025-10-21 23:07:07.507 +07:00 [INF] Content root path: D:\hocAPI\APi\APi
+2025-10-21 23:07:08.209 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - null null
+2025-10-21 23:07:08.485 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - 200 null text/html;charset=utf-8 285.6675ms
+2025-10-21 23:07:08.512 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - null null
+2025-10-21 23:07:08.512 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 23:07:08.542 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 29.2639ms
+2025-10-21 23:07:08.585 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.7315ms
+2025-10-21 23:07:08.748 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - null null
+2025-10-21 23:07:09.007 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 259.9024ms
+2025-10-21 23:07:14.564 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:07:14.681 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:07:14.701 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:07:14.715 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:07:14.736 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 27.3312ms
+2025-10-21 23:07:14.740 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:07:14.743 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 178.473ms
+2025-10-21 23:08:52.200 +07:00 [INF] User profile is available. Using 'C:\Users\tran dat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 23:08:52.558 +07:00 [INF] Now listening on: https://localhost:7161
+2025-10-21 23:08:52.561 +07:00 [INF] Now listening on: http://localhost:5266
+2025-10-21 23:08:52.566 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 23:08:52.569 +07:00 [INF] Hosting environment: Development
+2025-10-21 23:08:52.572 +07:00 [INF] Content root path: D:\hocAPI\APi\APi
+2025-10-21 23:08:53.365 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - null null
+2025-10-21 23:08:53.637 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - 200 null text/html;charset=utf-8 281.8299ms
+2025-10-21 23:08:53.669 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 23:08:53.669 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - null null
+2025-10-21 23:08:53.684 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 15.4776ms
+2025-10-21 23:08:53.742 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - 200 null text/javascript; charset=UTF-8 73.2363ms
+2025-10-21 23:08:53.976 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - null null
+2025-10-21 23:08:54.284 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 308.4766ms
+2025-10-21 23:08:58.727 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:08:58.851 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:08:58.877 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:08:58.901 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:08:58.927 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 39.5617ms
+2025-10-21 23:08:58.931 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:08:58.933 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 206.8375ms
+2025-10-21 23:09:12.854 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:09:12.863 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:09:12.866 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:09:12.870 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:09:12.873 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 3.9155ms
+2025-10-21 23:09:12.876 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:09:12.878 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 24.0864ms
+2025-10-21 23:12:18.252 +07:00 [INF] User profile is available. Using 'C:\Users\tran dat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 23:12:18.550 +07:00 [INF] Now listening on: https://localhost:7161
+2025-10-21 23:12:18.554 +07:00 [INF] Now listening on: http://localhost:5266
+2025-10-21 23:12:18.558 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 23:12:18.561 +07:00 [INF] Hosting environment: Development
+2025-10-21 23:12:18.563 +07:00 [INF] Content root path: D:\hocAPI\APi\APi
+2025-10-21 23:12:18.990 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - null null
+2025-10-21 23:12:19.210 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - 200 null text/html;charset=utf-8 231.5801ms
+2025-10-21 23:12:19.227 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - null null
+2025-10-21 23:12:19.227 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 23:12:19.261 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 33.3575ms
+2025-10-21 23:12:19.309 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - 200 null text/javascript; charset=UTF-8 82.1994ms
+2025-10-21 23:12:19.499 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - null null
+2025-10-21 23:12:19.759 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 259.9401ms
+2025-10-21 23:12:31.663 +07:00 [INF] User profile is available. Using 'C:\Users\tran dat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-10-21 23:12:32.023 +07:00 [INF] Now listening on: https://localhost:7161
+2025-10-21 23:12:32.026 +07:00 [INF] Now listening on: http://localhost:5266
+2025-10-21 23:12:32.031 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-10-21 23:12:32.034 +07:00 [INF] Hosting environment: Development
+2025-10-21 23:12:32.036 +07:00 [INF] Content root path: D:\hocAPI\APi\APi
+2025-10-21 23:12:32.502 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - null null
+2025-10-21 23:12:32.879 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - 200 null text/html;charset=utf-8 396.5081ms
+2025-10-21 23:12:32.893 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - null null
+2025-10-21 23:12:32.897 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - null null
+2025-10-21 23:12:32.913 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 20.3775ms
+2025-10-21 23:12:33.046 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - 200 null text/javascript; charset=UTF-8 150.5207ms
+2025-10-21 23:12:33.328 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - null null
+2025-10-21 23:12:33.565 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 237.7906ms
+2025-10-21 23:12:37.696 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:12:37.862 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:12:37.928 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:12:42.533 +07:00 [INF] Executed DbCommand (46ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[id], [u].[createdAt], [u].[email], [u].[fullname], [u].[isActive], [u].[lastLogin], [u].[password], [u].[phone], [u].[role], [u].[username]
+FROM [Users] AS [u]
+2025-10-21 23:12:42.722 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:12:42.824 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 4881.6491ms
+2025-10-21 23:12:42.828 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:12:42.846 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 5150.8697ms
+2025-10-21 23:12:57.970 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-10-21 23:12:57.979 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 9.9821ms
+2025-10-21 23:12:57.988 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7161/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-10-21 23:13:28.280 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:13:28.300 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:13:28.304 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:13:28.311 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:13:28.316 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 7.8994ms
+2025-10-21 23:13:28.319 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:13:28.321 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 41.3828ms
+2025-10-21 23:13:59.945 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:13:59.951 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:13:59.954 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:13:59.984 +07:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [u].[id], [u].[createdAt], [u].[email], [u].[fullname], [u].[isActive], [u].[lastLogin], [u].[password], [u].[phone], [u].[role], [u].[username]
+FROM [Users] AS [u]
+2025-10-21 23:13:59.990 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:13:59.993 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 34.3774ms
+2025-10-21 23:13:59.996 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:13:59.998 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 53.8074ms
+2025-10-21 23:14:06.528 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:06.534 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:06.537 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:06.543 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:06.547 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 4.4927ms
+2025-10-21 23:14:06.551 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:06.554 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 26.1976ms
+2025-10-21 23:14:12.902 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:12.908 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:12.911 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:12.916 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:12.920 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 4.9268ms
+2025-10-21 23:14:12.924 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:12.926 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 24.7824ms
+2025-10-21 23:14:22.203 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:22.209 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:22.212 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:22.216 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:22.220 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 3.5403ms
+2025-10-21 23:14:22.225 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:22.228 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 25.649ms
+2025-10-21 23:14:24.226 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:24.233 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:24.236 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:24.241 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:24.244 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 3.5339ms
+2025-10-21 23:14:24.247 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:24.250 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 24.2897ms
+2025-10-21 23:14:24.525 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:24.544 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:24.546 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:24.551 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:24.554 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 3.2201ms
+2025-10-21 23:14:24.557 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:24.559 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 34.6463ms
+2025-10-21 23:14:24.740 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:24.747 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:24.750 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:24.755 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:24.757 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 2.9561ms
+2025-10-21 23:14:24.760 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:24.762 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 22.2996ms
+2025-10-21 23:14:24.902 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:24.909 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:24.912 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:24.920 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:24.923 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 2.9021ms
+2025-10-21 23:14:24.926 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:24.928 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 26.4248ms
+2025-10-21 23:14:25.049 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:25.058 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:25.061 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:25.066 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:25.070 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 4.8565ms
+2025-10-21 23:14:25.074 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:25.077 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 27.9591ms
+2025-10-21 23:14:25.201 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:25.218 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:25.223 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:25.228 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:25.232 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 4.5449ms
+2025-10-21 23:14:25.235 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:25.238 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 37.4858ms
+2025-10-21 23:14:25.347 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:25.353 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:25.356 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:25.360 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:25.363 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 3.3793ms
+2025-10-21 23:14:25.366 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:25.368 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 21.8798ms
+2025-10-21 23:14:25.499 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:25.506 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:25.509 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:25.513 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:25.516 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 3.4881ms
+2025-10-21 23:14:25.519 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:25.522 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 23.2612ms
+2025-10-21 23:14:25.664 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:25.670 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:25.672 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:25.676 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:25.678 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 2.9721ms
+2025-10-21 23:14:25.682 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:25.684 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 20.7157ms
+2025-10-21 23:14:26.104 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:26.111 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.114 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:26.118 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:26.121 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 2.7997ms
+2025-10-21 23:14:26.124 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.126 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 21.7976ms
+2025-10-21 23:14:26.250 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:26.257 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.260 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:26.264 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:26.268 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 3.8114ms
+2025-10-21 23:14:26.271 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.273 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 22.8339ms
+2025-10-21 23:14:26.401 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:26.408 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.411 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:26.416 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:26.419 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 3.5714ms
+2025-10-21 23:14:26.422 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.424 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 23.0847ms
+2025-10-21 23:14:26.552 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:26.557 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.560 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:26.565 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:26.569 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 4.7535ms
+2025-10-21 23:14:26.572 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.574 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 23.0288ms
+2025-10-21 23:14:26.716 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:26.724 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.727 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:26.732 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:26.735 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 3.5666ms
+2025-10-21 23:14:26.738 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.740 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 24.3656ms
+2025-10-21 23:14:26.839 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:26.845 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.848 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:26.853 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:26.856 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 3.4527ms
+2025-10-21 23:14:26.859 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:26.861 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 22.5689ms
+2025-10-21 23:14:27.000 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:27.006 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:27.009 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:27.014 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:27.018 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 4.6328ms
+2025-10-21 23:14:27.021 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:27.024 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 24.746ms
+2025-10-21 23:14:27.140 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/InMemory/products - null null
+2025-10-21 23:14:27.158 +07:00 [INF] Executing endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:27.160 +07:00 [INF] Route matched with {action = "GetProduct", controller = "InMemory"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult GetProduct() on controller APi.Controllers.InMemoryController (APi).
+2025-10-21 23:14:27.165 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType7`2[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[APi.Models.UserModel, APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-10-21 23:14:27.169 +07:00 [INF] Executed action APi.Controllers.InMemoryController.GetProduct (APi) in 4.5694ms
+2025-10-21 23:14:27.172 +07:00 [INF] Executed endpoint 'APi.Controllers.InMemoryController.GetProduct (APi)'
+2025-10-21 23:14:27.174 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/InMemory/products - 200 null application/json; charset=utf-8 34.2158ms
