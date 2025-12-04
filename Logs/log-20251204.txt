@@ -1,0 +1,39 @@
+2025-12-04 11:21:50.184 +07:00 [INF] User profile is available. Using 'C:\Users\tran dat\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-04 11:21:51.035 +07:00 [INF] Now listening on: https://localhost:7161
+2025-12-04 11:21:51.038 +07:00 [INF] Now listening on: http://localhost:5266
+2025-12-04 11:21:51.044 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-04 11:21:51.047 +07:00 [INF] Hosting environment: Development
+2025-12-04 11:21:51.049 +07:00 [INF] Content root path: D:\hocAPI\APi\APi
+2025-12-04 11:21:54.873 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger - null null
+2025-12-04 11:21:55.221 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger - 301 0 null 364.2869ms
+2025-12-04 11:21:55.232 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/index.html - null null
+2025-12-04 11:21:55.603 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/index.html - 200 null text/html;charset=utf-8 370.7031ms
+2025-12-04 11:21:55.636 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/swagger-ui.css - null null
+2025-12-04 11:21:55.648 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - null null
+2025-12-04 11:21:55.649 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/_vs/browserLink - null null
+2025-12-04 11:21:55.647 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/swagger-ui-standalone-preset.js - null null
+2025-12-04 11:21:55.698 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_framework/aspnetcore-browser-refresh.js - 200 13742 application/javascript; charset=utf-8 50.7753ms
+2025-12-04 11:21:55.647 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/swagger-ui-bundle.js - null null
+2025-12-04 11:21:55.744 +07:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-12-04 11:21:55.756 +07:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-12-04 11:21:55.769 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/swagger-ui.css - 200 143943 text/css 134.087ms
+2025-12-04 11:21:55.779 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/swagger-ui-standalone-preset.js - 200 339486 text/javascript 132.0884ms
+2025-12-04 11:21:55.824 +07:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-12-04 11:21:55.829 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/swagger-ui-bundle.js - 200 1096145 text/javascript 182.3482ms
+2025-12-04 11:21:55.860 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/_vs/browserLink - 200 null text/javascript; charset=UTF-8 211.558ms
+2025-12-04 11:21:56.528 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - null null
+2025-12-04 11:21:56.590 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/swagger/favicon-32x32.png - null null
+2025-12-04 11:21:56.619 +07:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-12-04 11:21:56.634 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/favicon-32x32.png - 200 628 image/png 44.052ms
+2025-12-04 11:21:56.976 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 448.3068ms
+2025-12-04 11:22:11.925 +07:00 [INF] Request starting HTTP/2 GET https://localhost:7161/api/v1/Products/AllProduct - null null
+2025-12-04 11:22:14.321 +07:00 [INF] Executing endpoint 'APi.Controllers.ProductsController.GetProducts (APi)'
+2025-12-04 11:22:14.401 +07:00 [INF] Route matched with {action = "GetProducts", controller = "Products"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetProducts() on controller APi.Controllers.ProductsController (APi).
+2025-12-04 11:22:18.556 +07:00 [INF] Executed DbCommand (80ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[Name], [p].[Description], [p].[Price], [p].[ImagePath], [p].[CreatedAt], [p].[UpdatedAt], [l].[Id], [l].[TenLoai]
+FROM [products] AS [p]
+INNER JOIN [Loai] AS [l] ON [p].[CategoryId] = [l].[Id]
+2025-12-04 11:22:18.596 +07:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType3`2[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Collections.Generic.List`1[[<>f__AnonymousType8`8[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Decimal, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType9`2[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], APi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-12-04 11:22:18.634 +07:00 [INF] Executed action APi.Controllers.ProductsController.GetProducts (APi) in 4216.514ms
+2025-12-04 11:22:18.640 +07:00 [INF] Executed endpoint 'APi.Controllers.ProductsController.GetProducts (APi)'
+2025-12-04 11:22:18.656 +07:00 [INF] Request finished HTTP/2 GET https://localhost:7161/api/v1/Products/AllProduct - 200 null application/json; charset=utf-8 6731.4638ms
